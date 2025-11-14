@@ -31,7 +31,18 @@ const routes: Routes = [
       {
         path: 'sample-page',
         loadComponent: () => import('./demo/others/sample-page/sample-page.component').then((c) => c.SamplePageComponent)
+      },
+      {
+        path:'analiye-history',
+        loadComponent:() => import('./demo/component/basic-component/analiyze-history/analiyze-history.component').then((c)=> c.AnaliyzeHistoryComponent)
+      },
+      {
+      path:'management',
+      loadComponent: () =>import('./demo/component/basic-component/management/management.component').then ((c)=> c.ManagementComponent)
       }
+    
+
+      
     ]
   },
   {
@@ -42,11 +53,12 @@ const routes: Routes = [
         path: 'login',
         loadComponent: () => import('./demo/pages/authentication/auth-login/auth-login.component').then((c) => c.AuthLoginComponent)
       },
-      {
-        path: 'register',
-        loadComponent: () =>
-          import('./demo/pages/authentication/auth-register/auth-register.component').then((c) => c.AuthRegisterComponent)
-      }
+
+      // {
+      //   path: 'register',
+      //   loadComponent: () =>
+      //     import('./demo/pages/authentication/auth-register/auth-register.component').then((c) => c.AuthRegisterComponent)
+      // }
     ]
   }
 ];

@@ -66,10 +66,27 @@ export const NavigationItems: NavigationItem[] = [
   },
   {
     id: 'utilities',
-    title: 'UI Components',
+    title: 'services',
     type: 'group',
     icon: 'icon-navigation',
     children: [
+      {
+        id: 'Managment',
+        title: 'Managment',
+        type: 'item',
+        classes: 'nav-item',
+        url: '/Managment',
+        icon: 'User'
+      },
+      {
+        id: 'AnalyzeHistory',
+        title: 'Analyze History',
+        type: 'item',
+        classes: 'nav-item',
+        url: '/AnalyzeHistory',
+        icon: 'History'
+      },
+
       {
         id: 'typography',
         title: 'Typography',
