@@ -51,16 +51,6 @@ export const NavigationItems: NavigationItem[] = [
         icon: 'login',
         target: true,
         breadcrumbs: false
-      },
-      {
-        id: 'register',
-        title: 'Register',
-        type: 'item',
-        classes: 'nav-item',
-        url: '/register',
-        icon: 'profile',
-        target: true,
-        breadcrumbs: false
       }
     ]
   },
@@ -71,38 +61,40 @@ export const NavigationItems: NavigationItem[] = [
     icon: 'icon-navigation',
     children: [
       {
-        id: 'Managment',
-        title: 'Managment',
+        id: 'monitoring',
+        title: 'Monitoring',
         type: 'item',
         classes: 'nav-item',
-        url: '/Managment',
-        icon: 'User'
+        url: '/Monitoring',
+        icon: 'user'
       },
       {
-        id: 'AnalyzeHistory',
-        title: 'Analyze History',
+        id: 'analytics',
+        title: 'Analytics',
         type: 'item',
         classes: 'nav-item',
-        url: '/AnalyzeHistory',
-        icon: 'History'
-      },
-
-      {
-        id: 'typography',
-        title: 'Typography',
-        type: 'item',
-        classes: 'nav-item',
-        url: '/typography',
-        icon: 'font-size'
+        url: '/Analytics',
+        icon: 'line-chart'
       },
       {
-        id: 'color',
-        title: 'Colors',
+        id: 'devices',
+        title: 'Devices',
         type: 'item',
         classes: 'nav-item',
-        url: '/color',
-        icon: 'bg-colors'
+        url: '/device',
+        icon: 'rocket',
+        
       },
+      
+      
+      // {
+      //   id: 'color',
+      //   title: 'Colors',
+      //   type: 'item',
+      //   classes: 'nav-item',
+      //   url: '/color',
+      //   icon: 'bg-colors'
+      // },
       {
         id: 'ant-icons',
         title: 'Ant Icons',

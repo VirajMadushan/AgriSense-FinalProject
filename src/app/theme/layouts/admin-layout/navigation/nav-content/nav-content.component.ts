@@ -10,6 +10,7 @@ import { environment } from 'src/environments/environment';
 import { NavGroupComponent } from './nav-group/nav-group.component';
 
 // icon
+
 import { IconService } from '@ant-design/icons-angular';
 import {
   DashboardOutline,
@@ -22,7 +23,9 @@ import {
   ProfileOutline,
   BgColorsOutline,
   AntDesignOutline,
-  HistoryOutline
+  HistoryOutline,
+  LineChartOutline,
+  RocketOutline
 
 
 } from '@ant-design/icons-angular/icons';
@@ -66,6 +69,8 @@ export class NavContentComponent implements OnInit {
         QuestionOutline,
         HistoryOutline,
         ChromeOutline,
+        LineChartOutline,
+        RocketOutline
 
       ]
     );

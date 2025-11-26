@@ -4,6 +4,7 @@ import { animate, style, transition, trigger } from '@angular/animations';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
+
 // project import
 import { NavigationItem } from '../../navigation';
 
@@ -12,7 +13,7 @@ import { IconDirective } from '@ant-design/icons-angular';
 
 @Component({
   selector: 'app-nav-collapse',
-  imports: [CommonModule, IconDirective, RouterModule, NavItemComponent],
+  imports: [CommonModule, IconDirective, RouterModule, NavItemComponent, ],
   templateUrl: './nav-collapse.component.html',
   styleUrls: ['./nav-collapse.component.scss'],
   animations: [

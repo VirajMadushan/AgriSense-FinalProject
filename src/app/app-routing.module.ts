@@ -25,6 +25,10 @@ const routes: Routes = [
         loadComponent: () => import('./demo/component/basic-component/typography/typography.component').then((c) => c.TypographyComponent)
       },
       {
+        path: 'devices',
+        loadComponent: () => import('./demo/component/basic-component/devices/devices.component').then((c) => c.DevicesComponent )
+      },
+      {
         path: 'color',
         loadComponent: () => import('./demo/component/basic-component/color/color.component').then((c) => c.ColorComponent)
       },
@@ -33,12 +37,16 @@ const routes: Routes = [
         loadComponent: () => import('./demo/others/sample-page/sample-page.component').then((c) => c.SamplePageComponent)
       },
       {
-        path:'analiye-history',
-        loadComponent:() => import('./demo/component/basic-component/analiyze-history/analiyze-history.component').then((c)=> c.AnaliyzeHistoryComponent)
+        path:'analytics',
+        loadComponent:() => import('./demo/component/basic-component/analytics/analytics.component').then((c)=> c.AnalyticsComponent)
       },
       {
-      path:'management',
-      loadComponent: () =>import('./demo/component/basic-component/management/management.component').then ((c)=> c.ManagementComponent)
+      path:'monitoring',
+      loadComponent: () =>import('./demo/component/basic-component/monitoring/monitoring.component').then ((c)=> c.MonitoringComponent)
+      },
+      {
+      path:'profile',
+      loadComponent: () =>import('./demo/component/basic-component/profile/profile.component').then ((c)=> c.ProfileComponent)
       }
     
 
